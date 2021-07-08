@@ -1,0 +1,9 @@
+Namespace(batch_size=16, dataset='shapenetcorev2', dataset_root='/home/mvries/Documents/Datasets/', dropout=0.5, encoder='dgcnn_cls', epochs=None, eval=False, exp_name='ReconStuct_Test_0707', feat_dims=512, gpu='0', k=20, model_path='', no_cuda=False, num_points=2048, shape='sphere', snapshot_interval=10, task='reconstruct', use_jitter=False, use_rotate=False, use_translate=False, workers=16)
+Training set size: 51127
+Training start!!
+Epoch 1: Loss 3940.08203125, time 9021.7227s
+Epoch 2: Loss 924.2730102539062, time 9021.1759s
+Epoch 3: Loss 465.8836364746094, time 9015.6640s
+Epoch 4: Loss 822.3529663085938, time 9013.7230s
+Epoch 5: Loss 413.6519775390625, time 8999.3209s
+Epoch 6: Loss 340.9387512207031, time 8958.6942s
