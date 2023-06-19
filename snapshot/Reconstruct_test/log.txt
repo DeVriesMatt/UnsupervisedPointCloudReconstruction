@@ -1,0 +1,4 @@
+Namespace(batch_size=16, dataset='shapenetcorev2', dataset_root='/home/mvries/Documents/Datasets/', dropout=0.5, encoder='dgcnn_cls', epochs=None, eval=False, exp_name='test', feat_dims=512, gpu='0', k=20, model_path='', no_cuda=False, num_points=2048, shape='plane', snapshot_interval=10, task='reconstruct', use_jitter=False, use_rotate=False, use_translate=False, workers=16)
+Training set size: 9084
+Training start!!
+Epoch 1: Loss 10303.4384765625, time 760.4519s

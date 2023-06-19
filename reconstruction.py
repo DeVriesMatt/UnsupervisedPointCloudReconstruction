@@ -37,6 +37,7 @@ class Reconstruction(object):
         self.snapshot_interval = args.snapshot_interval
         self.no_cuda = args.no_cuda
         self.model_path = args.model_path
+        self.output_dir = args.output_dir
 
         # create exp directory
         file = [f for f in args.model_path.split('/')]
@@ -46,8 +47,8 @@ class Reconstruction(object):
             self.experiment_id = file[-3]
         else:
             self.experiment_id = "Reconstruct" + time.strftime('%m%d%H%M%S')
-        snapshot_root = 'snapshot/%s' % self.experiment_id
-        tensorboard_root = 'tensorboard/%s' % self.experiment_id
+        snapshot_root = os.path.join(self.output_dir, 'snapshot/%s' % self.experiment_id)
+        tensorboard_root = os.path.join(self.output_dir, 'tensorboard/%s' % self.experiment_id)
         self.save_dir = os.path.join(snapshot_root, 'models/')
         self.tboard_dir = tensorboard_root
 
